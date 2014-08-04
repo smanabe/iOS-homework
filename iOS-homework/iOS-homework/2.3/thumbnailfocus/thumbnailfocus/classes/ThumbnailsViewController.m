@@ -10,10 +10,27 @@
 
 @interface ThumbnailsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageViews;
 @property (strong, nonatomic) FocusManager *focusManager;
 @end
 
 @implementation ThumbnailsViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    NSLog(@"start");
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        // ipadの場合
+        NSLog(@"ipad");
+        nibNameOrNil = @"ThumbnailsViewController~ipad";
+    } else {
+        // ipad以外の場合
+        NSLog(@"not ipad");
+        nibNameOrNil = @"ThumbnailsViewController";
+    }
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -21,6 +38,15 @@
 
     self.focusManager = [[FocusManager alloc] init];
     self.focusManager.delegate = self;
+    
+    
+    // iPadの処理
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        NSLog(@"this is ipad view");
+        for(UIImageView *image in self.imageViews){
+            [self.focusManager installOnView:image];
+        }
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations
