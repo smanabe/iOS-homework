@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E28C4BFF-E511-4F2B-BCA5-B859F786DCC0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>scrollViewSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF1DB217-D647-4BB0-A8AB-22AB151519BB</key>
+		<string>https://github.com/smanabe/iOS-homework.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS-homework/iOS-homework/3.1/scrollViewSample/scrollViewSample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF1DB217-D647-4BB0-A8AB-22AB151519BB</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/smanabe/iOS-homework.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF1DB217-D647-4BB0-A8AB-22AB151519BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF1DB217-D647-4BB0-A8AB-22AB151519BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-homework</string>
+		</dict>
+	</array>
+</dict>
+</plist>
